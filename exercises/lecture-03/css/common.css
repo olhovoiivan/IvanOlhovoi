@@ -1,0 +1,19 @@
+/* 6.Виправити помилку у фпагменті : оскільки правило @import було оголошено після стилів, воно є недійсним і, отже, ігнорується, тому його переносимо перед стилями*/
+
+@import url("my-imported-styles.css");
+
+* {
+  margin: 0;
+  padding: 0;
+ }
+ /* 7. Відредагувати файл css/common.css */
+
+ html{
+    --primary-text-color: #000;
+    --primary-bg-color: #fff;
+ }
+
+ footer{
+    --footer-text-color: #fff;
+    --fuuter-bg-color: #000;
+ }

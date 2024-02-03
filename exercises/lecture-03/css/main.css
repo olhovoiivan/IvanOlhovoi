@@ -1,0 +1,9 @@
+@import url(/exercises/lecture-03/css/common.css);
+
+/* 8. Відредагувати файл css/main.css */
+
+body{
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+}
+

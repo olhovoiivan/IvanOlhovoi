@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 challenges</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/exercises/lecture-03/css/main.css">
+    <style>
+        p{
+            color: red; 
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Сторінка Вікіпедії для мови CSS</h2>
+    <!-- Додайте тут елеиент iframe з посиланням на українську версію Wikipedia page for the CSS language -->
+    <iframe name = "CSS" width = "50%" height="50%" src = "https://uk.wikipedia.org/wiki/CSS/" style="border:1px solid black" ></iframe>
+    <!-- В елеиенті iframe визначте атрибут title зі значенням Сторінка Вікіпедії для мови CSS -->
+    <iframe name = "CSS" title="Сторінка Вікіпедії для мови CSS" width = "50%" height="50%" src = "https://uk.wikipedia.org/wiki/CSS/" style="border:1px solid black" ></iframe>
+    <!-- Додайте тут елеиент p з текстом This is my paragraph. визначте атрибут style для тега p зі значенням color: blue;-->
+    <p style="color: blue">This is my paragraph.</p>
+    <!-- який колір буде мати текст This is my paragraph і чому.-->
+    колір буде блакитний, тому що Inline-стилі мають найвищій пріоритет  
+    <!-- У наступному фпагменті випрвити помилки -->
+    <!-- id-повинен бути унікальним і не мати повторів, тому змінив назву другого id-->
+    <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+    <p id="exciting">The most exciting paragraph on the page. One of a kind!</p>
+    <div id="exciting-one">The most exciting paragraph on the page. One of a kind!</div>
+ <style>
+  #exciting, #exciting-one{
+   background: #f69d3c;
+   border: 1px solid #696969;
+   padding: 10px;
+  }
+ </style>
+<!-- Чи буде змінна --bgColor видимою для елемента body. Яким буде фон елемента body і чому. -->
+
+Ні не буде відомою. тому що змінна --bgColor, присвоєна елементу div і ця змінна буде успадковуються лише нащадками (вкладеними елементами), якщо вони не перевизначені. А body є батьківським елементом.
+
+<!-- Відредагувати розділ footer -->
+
+<footer>
+    <section>
+     <div>
+        <h2>About</h2>
+        <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+     </div>
+     <div>
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">eBooks</a></li>
+            <li><a href="#">Webinars</a></li>
+        </ul>
+     </div> 
+     <div>
+        <h2>Contact</h2>
+        <ul>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Sales</a></li>
+        <li><a href="#">Advertise</a></li>
+        </ul>
+     </div> 
+    <section>
+        <ul>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+          &copy; 2024 Copyright Shopaholic Inc.
+     </section>
+    </section>   
+  </footer>
