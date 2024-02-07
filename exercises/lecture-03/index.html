@@ -19,6 +19,13 @@
         p {
             background: var(--bgColor);
         }
+      
+        #exciting, #exciting-one{
+            background: #f69d3c;
+            border: 1px solid #696969;
+            padding: 10px;
+        }
+ 
     </style>
 </head>
 <body>
@@ -37,13 +44,7 @@
     <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
     <p id="exciting">The most exciting paragraph on the page. One of a kind!</p>
     <div id="exciting-one">The most exciting paragraph on the page. One of a kind!</div>
- <style>
-  #exciting, #exciting-one{
-   background: #f69d3c;
-   border: 1px solid #696969;
-   padding: 10px;
-  }
- </style>
+ 
 <!-- Чи буде змінна --bgColor видимою для елемента body. Яким буде фон елемента body і чому. -->
 
 <!-- Ні не буде відомою. тому що змінна --bgColor, присвоєна елементу div і ця змінна буде успадковуються лише нащадками (вкладеними елементами), якщо вони не перевизначені. А body є батьківським елементом. -->
