@@ -4,12 +4,15 @@ body{
 	font-size: 16px;
 }
 div{
-	font-size: 1em;
+	font-size: 1.6em;
 }
 span{
 	font-size: 1.6em;
 }
-span > span{
+div > span > span{
+	font-size: 1.6em;
+}
+div ~ strong{
 	font-size: 1.6em;
 }
 /* стилізувати елементи списку за длпомогою стилю квадрат */
