@@ -5,14 +5,23 @@
     --primary-font-size: 0.875rem;
 }
 
-
-
-
 html {
-    --primary-text-color: #000;
-    --primary-bg-color: #fff;
+   background-color: var(--primary-bg-color);
+   color: var(--primary-text-color);
+   font-family: var(--primary-font-family);
+   font-size: var(--primary-font-size);
 }
+  body{
+    font-family: var(--primary-font-family);
+    font-size: var(--primary-font-size);
+ }
 footer {
     --footer-text-color: #fff;
     --fuuter-bg-color: #000;
+    color: var(--footer-text-color);
+    background-color: var(--fuuter-bg-color);  
+    }
+    /* Встановіть для тега a властивість text-decoration: none; у файлі css/common.css  */
+a{
+  text-decoration: none;
 }
