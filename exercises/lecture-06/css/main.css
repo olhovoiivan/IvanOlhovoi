@@ -29,49 +29,61 @@
         background-color: rgba(255,0,0,0.25);
     }
 
-    /* - Встановіть першому елементу li помаранчевий колір */
-  
-    body > ul:nth-child(3){
-        li:first-child{
-        color:orange;
-        }
-    }
-    
-    /* Встановіть першому елементу li та першому елементу span помаранчевий колір */
+    /* ul li{
+        color: black;
+    } */
 
-    body > ul:nth-child(4){
-        li:first-child,
-        li > span:first-child{
+    /* - Встановіть першому елементу li помаранчевий колір */
+    /* body > ul:nth-child(3){
+        li:first-child{
             color:orange;
         }
+    } */
+    ul li:first-child{
+        color:orange;
     }
-     
+    /* Встановіть першому елементу li та першому елементу span помаранчевий колір */
+    /* body > ul:nth-child(3){
+         li:first-child,
+         li > span:first-child{
+            color:orange;
+        }
+    } */
+    ul li:first-child, span:first-child{
+        color:orange;
+    }
+   
     /* Встановіть останньому елементу li та останньому елементу span помаранчевий колір */
-
-    body > ul:nth-child(5){
+    /* body > ul:nth-child(5){
         li:last-child,
         li > span:last-child{
             color: orange;
         }
-    } 
-
+    }  */
+    ul li:last-child, span:last-child{
+        color: orange;
+    }
     /* Встановіть елементу li помаранчевий колір, якщо він не має аргумента class="first-item"*/
-
-    body > ul:nth-child(6){
+    /* body > ul:nth-child(6){
         li:not(.first-item){
             color: orange;
         }
+    } */
+    ul li:not(.first-item){
+        color: orange;
     }
-
      /* Встановіть всім елементаи li чорний текст і жовтий фон, крім елемента li з класом .first-item та останнього елемента li у списку */
-
-    body > ul:nth-child(6){
+    /* body > ul:nth-child(6){
         li:not(.first-item):not(:last-of-type){
             color:black;
             background-color: yellow;
         }
-    } 
-
+    }  */
+    ul li:not(.first-item):not(:last-of-type){
+        color:black;
+        background-color: yellow;
+    }
+     
     /* Встановіть другому елементу li помаранчевий колір */
 
     ol > li:nth-child(2){
@@ -107,3 +119,26 @@
     .cont::before{
         content:"\0A7";
     } 
+
+    /* 
+    ul: first-of-type{
+          color:orange;
+     li:first-of-type+li{
+    color:#00d42a;
+    }
+            
+      
+    body>ul:nth-child(5){
+        li:last-child,
+          li>span:last-child{
+    color: orange;
+    }
+    }
+    
+    body>ul:nth-child(6){
+        li:not(.first-item):not(:last-of-type){
+            color:black;
+            background-color: yellow;
+        }
+    }
+ */
