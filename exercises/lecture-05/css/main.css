@@ -1,7 +1,12 @@
 
 html {
 	font-size: 100%;
-	}
+}
+
+body{
+font-family: "Roboto", sans-serif;
+font-size: 16px;
+}
 div{
 	font-size: 1em;
 }

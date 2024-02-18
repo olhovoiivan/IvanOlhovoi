@@ -120,25 +120,4 @@
         content:"\0A7";
     } 
 
-    /* 
-    ul: first-of-type{
-          color:orange;
-     li:first-of-type+li{
-    color:#00d42a;
-    }
-            
-      
-    body>ul:nth-child(5){
-        li:last-child,
-          li>span:last-child{
-    color: orange;
-    }
-    }
     
-    body>ul:nth-child(6){
-        li:not(.first-item):not(:last-of-type){
-            color:black;
-            background-color: yellow;
-        }
-    }
- */
