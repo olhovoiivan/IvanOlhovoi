@@ -36,19 +36,6 @@ header {
     color: #000;
 }
 
-/* Створіть "Mobile First" media-запит, що змінює макет navbar 
-з горизонтального меню нa вертикальне меню при переході через контрольну точку 800px. */
-
-
-@media screen and (max-width: 800px) {
-    header {
-        display: grid;
-        grid-template-columns: 1fr; 
-        flex-direction: column;
-        align-items: center;
-    }
-  }
-
 /* @media screen and (min-width: 801px) {
     header {
        display: grid;
@@ -68,14 +55,6 @@ nav {
 .navbar, .toolbar{
   margin-top: 2rem;
 }
-
-@media screen and (max-width: 800px) {
-    .logo {
-        /* display: grid; */
-        grid-column: 1;
-    }
-  }
-
 .logo {
   grid-column: 2 / 3;
 }
@@ -83,13 +62,6 @@ nav {
 .toolbar {
   grid-column: 5 / 6;
 }
-
-@media screen and (max-width: 800px) {
-    .navbar {
-        /* display: grid; */
-        grid-column: 2;
-    }
-  }
 .navbar {
   grid-column: 3 / 4;
 }
@@ -100,4 +72,32 @@ nav {
 
 .navbar a {
   margin-left: 1em;
+}
+ /* Створіть "Mobile First" media-запит, що змінює макет navbar 
+з горизонтального меню нa вертикальне меню при переході через контрольну точку 800px. */
+
+@media (max-width: 800px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr; 
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    display: grid; 
+    grid-column: 1;
+  }
+  .navbar{
+    display: grid;
+    grid-column: 1;
+    flex-direction: column;
+    justify-content: center;   
+  } 
+  .toolbar{
+    display: grid;
+    grid-column: 1;
+    flex-direction: column;
+    justify-content: center;
+    /* display: none; */
+  } 
 }

@@ -1,0 +1,54 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+table { 
+    width: 50rem; 
+    border-collapse: collapse; 
+    margin:3rem auto;
+}
+
+/* Зробіть таблицю смугастою, встановивши кожному непарному рядку таблиці світло-сіре тло. */
+tr:nth-child(odd){
+background-color: #D3D3D3;
+}
+ /* Визначте такі властивості елементу th: - тло - indigo; - колір - білий; - вага шрифту - напівжирний. */
+th { 
+    background-color: indigo;
+     color: white;
+     font-weight: 600;
+} 
+
+/* Визначте такі властивості елементів td, th: 
+ - padding - 10 пікселів, перерахувавши їх у rem; 10/(800/50)=0.625
+ - border - товщиною в 1 піксель, солідну, світло-сіру; - вирівняйте текст зліва; 
+ - розмір шрифту - 18 пікселів, перерахувавши їх у rem. 18/16=1.125 */
+
+td, th { 
+    padding: 0.625rem;
+    border: 1px solid #D3D3D3;
+    text-align: left;
+    font-size: 1.125rem;
+}
+
+/* Створіть media-запит max-width: 50rem, що визначає наступне: - перетворює table, thead, tbody, th, td, tr на блоки; 
+- приховує thead tr; - для елементу tr визначає border: 1px solid darkgrey;
+ - для елементу td відміняє border, а потім визначає border-bottom: 1px solid lightgray. */
+@media (max-width: 50rem) {
+    table, thead, tbody, th, td, tr { 
+        display: block;
+    }
+       
+    thead tr { 
+        display: none;
+    }
+      
+    tr {
+        border: 1px solid darkgrey;
+    }
+    td { 
+        border: none;
+        border-bottom: 1px solid lightgray;
+    } 
+}
+
