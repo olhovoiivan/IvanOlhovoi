@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+   
+  <script>
+
+//   let x = 3
+//   let y = 4
+
+//   x == 3 //true
+//   x === "3" //false
+//   x!=5  //true
+//   x!== "5" //true
+//   x!== 3 //false
+//   y > 5  //false
+//   y >= 3  //true
+//   y < 5   //true
+//   y <= 2   //false
+//   1 == true //true
+//   null == undefined  //true
+//   NaN == NaN  //false
+//  2. Визначити результат наступних логічних виразів:
+// let x = 3;
+// let y = 4;
+// let z = 5;
+ 
+// x ||= y;    //3
+// x || (y = z); //3
+// x &&= y; // 4
+// x && (y = z); //5
+// x ??= y;  //3
+// x ?? (y = z); //3
+
+// 3. Напишіть програму, що пропонує користувачеві вгадати якесь число, наприклад 3. 
+// У разі успіху, потрібно вивести вітання користувачеві, наприклад - 'Congratulations, You did it!' 
+// Якщо число більше за 3, потрібно вивести повідомлення користувачеві, наприклад - 'The number is too long' 
+// Якщо число менше за 3, потрібно вивести повідомлення користувачеві, наприклад - 'The number is short'
+
+// let num = 3;
+// num = Number(prompt("Потрібно вказати якесь число", ""));
+//  if(num === 3){
+//   alert("Вітаю, Ви вгадали число"); 
+//  }
+//  else if(num>3){
+//   alert("Вказане число більше ніж потрібно"); 
+//  }
+//  else{
+//   alert("Вказане число меньше ніж потрібно"); 
+// }
+
+// 4. Напишіть програму, що пропонує користувачеві ввести назву дня тижня, наприклад - Понеділок. 
+// Якщо користувач ввів Понеділок або Monday, вивести повідомлення "Start of the work week!" 
+// Якщо користувач ввів П'ятниця або Friday, вивести повідомлення "End of the work week!" 
+// В інших випадках вивести повідомлення "A regular day"
+// let day = prompt("Enter the day of the week:","");
+// switch (day) {
+// case "monday":
+// case "понеділок":
+// console.log("Start of the work week!");
+// break;
+// case "friday":
+// case "п'ятниця":
+// console.log("End of the work week!");
+// break;
+// default:
+// console.log("A regular day");
+// }
+
+// 5. Напишіть версію програми, застосовуючи оператор if else
+  // let day = prompt("Потрібно ввести назву дня тижня", "");
+  // if(day === "понеділок" || day === "monday"){
+  //  alert("Start of the work week!"); 
+  //  }
+  // else if(day === "п'ятниця" || day === "friday"){
+  //  alert("End of the work week!"); 
+  //  }
+  // else{
+  //   alert("A regular day"); 
+  //  }
+
+  // 6. Напишіть версію програми, застосовуючи оператор switch
+// let day = prompt("Enter the day of the week:","");
+// switch (day) {
+// case "monday":
+// case "понеділок":
+// console.log("Start of the work week!");
+// break;
+// case "friday":
+// case "п'ятниця":
+// console.log("End of the work week!");
+// break;
+// default:
+// console.log("A regular day");
+// }
+
+//    7. За результатами іспиту студент набирає певну кількість балів, що зберігається в змінній score. 
+// Напишіть програму, що аналізує значення score та призначає студенту ступінь grade за таким алгоритмом:
+// Якщо студент набрав менше 50 балів, призначити йому ступінь 'F'
+// Якщо студент набрав менше 70 балів, призначити йому ступінь 'D'
+// Якщо студент набрав менше 80 балів, призначити йому ступінь 'C'
+// Якщо студент набрав менше 90 балів, призначити йому ступінь 'B'
+// В іншому випадку призначити йому ступінь 'A'
+
+// 7.1  Напишіть версію програми, застосовуючи оператор if else
+// let score;
+// score = Number(prompt("Потрібно вказати результат іспиту в балах, який отримав студент", ""));
+// let grade;
+// if (score < 50){
+//   grade = "F"
+//   alert(grade)
+// }
+// else if (score < 70){
+//   grade = "D"
+//   alert(grade)
+// }
+// else if (score < 80){
+//   grade = "C"
+//   alert(grade)
+// }
+// else if (score < 90){
+//   grade = "B"
+//   alert(grade)
+// }
+// else{
+//   grade = "A"
+//   alert(grade)
+// }
+// 7.2  Напишіть версію програми, застосовуючи тернарний оператор
+// const score = Number(prompt("Потрібно вказати результат іспиту в балах, який отримав студент :", ""));
+// const valueGrade = exampleScore(score);
+// alert("Результат судента за іспит :" +" " + score + " " + valueGrade);
+// function exampleScore(score) {
+//   return (score < 50) ? "F"
+//         : (score < 70) ? "D"
+//         : (score < 80) ? "C"
+//         : (score < 90) ? "B"
+//         : "A";
+// }
+// 7.3 Виправити помилку у наступному коді:
+// let firstName = null;
+// let lastName = undefined;
+// let username = firstName || lastName || "Guest";
+
+// console.log(username); // "Guest"
+  </script>
+
+</body>
+</html>
