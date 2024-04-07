@@ -21,6 +21,7 @@ const listWithHref = [
 //де кожний елемент списку є тегом a з відповідним посиланням. Наприклад, для першого елемента списку:
 // <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">html</a>
 // Додайте створений список на сторінку.
+
 let ol = document.createElement('ol');
 function linkEl(text, url){
     let link = document.createElement('a');  
@@ -29,14 +30,14 @@ function linkEl(text, url){
     return link;
 }
 listWithHref.forEach((element) => {
-    let li = document.createElement('li');
-    for(let i=0; i < listWithHref.length; i++){
-    let key = Object.keys(element)[i];
-    let value = Object.values(element)[i];
-    let link = linkEl(key, value);
-    li.appendChild(link);
-    ol.appendChild(li);
-  }});
+  let key = Object.keys(element)[0];
+  let value = element[key];
+  let li = document.createElement('li');
+  let link = linkEl(key, value);
+  li.appendChild(link);
+  ol.appendChild(li);
+  });
+  
   document.body.appendChild(ol);
   
 // 3. Маємо масив students

@@ -35,7 +35,7 @@ form.addEventListener('submit', function(event) {
         displayErrorMessage("Пароль повинен містити принаймні одну велику літеру, одну малу літеру, одну цифру та один спеціальний символ.");
     return
     }
-    if (error.innerHTML === "") {
+    if (errorMessages.innerHTML === "") {
         form.submit();
     } // Якщо перевірка пройдена, надішліть форму
     });
@@ -55,4 +55,13 @@ form.addEventListener('submit', function(event) {
         /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
       return passwordRegex.test(password);
     }
-    
+ 
+function preventEvent( event ) {
+  if ( event.cancelable ) { //  если событие может быть отменено и предотвращено
+    event.preventDefault(); // отменяем действие события по умолчанию
+    console.log("Событие " + event.type + " отменено"); //  выводим в консоль информацию о том какое событие было отменено
+  } else { //  если событие не может быть отменено и предотвращено
+    console.warn("Событие " + event.type + " не может быть отменено"); 
+//  выводим в консоль информацию о том, что данное событие не может быть отменено
+  }
+}
